@@ -1,0 +1,39 @@
+{
+  "name": "inventry",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "productId": {
+      "type": "number",
+      "required": true
+    },
+    "productName": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "mrp": {
+      "type": "string"
+    },
+    "batchNumber": {
+      "type": "number"
+    },
+    "batchDate": {
+      "type": "date"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

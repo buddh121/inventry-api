@@ -1,0 +1,8 @@
+{
+  "db": {
+    "host": "localhost",
+    "database": "inventry_db",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}
