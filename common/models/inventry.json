@@ -82,7 +82,17 @@
     "fetch": {
       "isStatic": true,
       "accepts": [],
-      "returns": [],
+      "returns": [
+        {
+          "arg": "message",
+          "type": "object",
+          "root": true,
+          "http": {
+            "source": "res"
+          },
+          "description": "message"
+        }
+      ],
       "description": "Fetch Inactive records ",
       "http": [
         {

@@ -52,8 +52,6 @@ Inventry.insert = function(data, req, callback) {
   
 };
 
-};
-
 
 
 /**
@@ -61,10 +59,33 @@ Inventry.insert = function(data, req, callback) {
  * @param {Function(Error)} callback
  */
 
-inventry.fetch = function(callback) {
-  // TODO
-  callback(null);
+Inventry.fetch = function(callback) {
+
+
+	var query = {
+		where: {
+			'status': "PENDING"
+		}
+	}
+
+	Inventry.find(query, function(err, instance){
+
+		if(err) throw(err)
+
+		var response = {
+			"message": "ok",
+			"data": instance
+		}
+
+		callback(null, response);
+	});
 };
+
+
+};
+
+
+
 
 
 
