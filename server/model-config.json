@@ -32,10 +32,17 @@
     }
   },
   "Role": {
-    "dataSource": "db",
-    "public": false
+    "dataSource": "db"
   },
   "inventry": {
+    "dataSource": "db",
+    "public": true
+  },
+  "user": {
+    "dataSource": "db",
+    "public": true
+  },
+  "role": {
     "dataSource": "db",
     "public": true
   }

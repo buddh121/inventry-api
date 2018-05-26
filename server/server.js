@@ -2,6 +2,7 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var LoopBackContext = require('loopback-context')
 
 var app = module.exports = loopback();
 
@@ -33,3 +34,4 @@ boot(app, __dirname, function(err) {
 app.use(loopback.token({
     model: app.models.accessToken
 }));
+
