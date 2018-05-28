@@ -64,7 +64,7 @@ Inventry.fetch = function(callback) {
 
 	var query = {
 		where: {
-			'status': "PENDING"
+			'status': "ACTIVE"
 		}
 	}
 

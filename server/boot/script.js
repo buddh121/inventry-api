@@ -4,7 +4,7 @@
 //   var RoleMapping = server.models.RoleMapping;
 
 //   var users = [
-//     {email: 'buddh@gmail.com', password: 'incorrect'}
+//     {email: 'sam@gmail.com', password: 'incorrect'}
 //   ];
 
 //   User.create(users, function(err, users) {

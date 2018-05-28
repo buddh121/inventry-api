@@ -9,5 +9,38 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {
+    "userRole": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "userId",
+          "type": "string",
+          "required": true,
+          "description": "user id of logged in user",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "message",
+          "type": "object",
+          "root": true,
+          "http": {
+            "source": "res"
+          },
+          "description": "message"
+        }
+      ],
+      "description": "Fetch Role of the user",
+      "http": [
+        {
+          "path": "/userRole",
+          "verb": "get"
+        }
+      ]
+    }
+  }
 }
